@@ -1,4 +1,4 @@
-fetch("component/Header.html")
+fetch("component/header.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("head").innerHTML = data;
@@ -23,4 +23,5 @@ fetch("component/foot.html")
 .then(data => {
     document.getElementById("foot").innerHTML= data
 });
+
 
