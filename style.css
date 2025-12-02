@@ -1,0 +1,1139 @@
+
+body {
+    font-family : Arial, sans-serif;
+    padding : 0;
+    margin : 0;
+    background-color : cover;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #461A1A;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+    height: 85px;
+
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+}
+
+header.hide {
+    transform: translateY(-100%);
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+}
+
+header img {
+    height: 55px;
+    object-fit: contain;
+}
+
+.nava {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
+    .nava {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px 10px;
+        margin: 0;
+    }
+}
+
+/* footer */
+footer {
+    padding: 50px 20px 30px 20px;
+    background-color: #461A1A;
+    color: #d7f1fc;
+}
+
+footer h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+footer a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #d7f1fc;
+}
+
+.footsec {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.kontak,
+.menu,
+.Alamat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 250px; 
+}
+
+.footmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map {
+    width: 100%;
+    max-width: 360px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    background: white;
+}
+
+.cr {
+    color: white;
+    background-color: #461A1A;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+/* =========================
+   RESPONSIVE FOOTER
+========================= */
+@media (max-width: 992px) {
+    .footsec {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footsec {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .map {
+        max-width: 100%;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
+    .cr {
+        font-size: 12px;
+    }
+}
+
+/* ===== Bootstrap CDN ===== */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+
+
+.welcome {
+    background: linear-gradient(rgba(70, 26, 26, 0.7), rgba(215, 241, 252, 0.5)), url(imge/welcome.jpeg) center no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* ===== SEC1 ===== */
+.sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.sec1 .left, .sec1 .right {
+    flex: 1 1 400px;
+    min-width: 300px;
+}
+
+.sec1 hr {
+    border: none;
+    border-left: 2px solid #000;
+    height: auto;
+}
+
+.about-link {
+    color: #007A7A;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== SEC2 / EVENT ===== */
+.sec2 {
+    background-color: #ebd9c8;
+    padding: 60px 20px;
+}
+
+.info-beranda h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* ===== CARD CONTAINER ===== */
+.card-container-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 15px;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #777;
+    text-align: right;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.desc {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.btn-custom {
+    background-color: #007A7A;
+    color: white;
+    border: none;
+    width : 170px;
+    height : 50px;
+    font-size : 20px
+}
+
+.btn-custom:hover {
+    background-color: #054f4f;
+    color: white;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .welcome h1 {
+        font-size: 2.2rem;
+    }
+    .sec1 {
+        flex-direction: column;
+    }
+    .sec1 hr {
+        width: 100%;
+        height: 2px;
+        border-left: none;
+        border-top: 2px solid #000;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome h1 {
+        font-size: 1.8rem;
+    }
+    .info-beranda h1 {
+        font-size: 2rem;
+    }
+    .info-beranda h3 {
+        font-size: 1.2rem;
+    }
+    .btnmore {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* hero */
+
+.hero {
+  height :  450px;
+  margin : 0px;
+  color : white;
+  font-size : 60px;
+}
+
+.berita {
+  background : linear-gradient(rgba(36, 6, 6, 0.83) 
+    ,rgba(146, 122, 113, 0.23)), url(imge/bgnews.PNG) center no-repeat;
+  background-size : cover;
+  align-content: center;
+  text-align: center;
+}
+.berita h1 {
+  font-size : 60px;
+  font-weight : bold;
+  padding-top : 30px;
+}
+
+.product {
+  background : linear-gradient(rgba(36, 6, 6, 0.83) 
+    ,rgba(146, 122, 113, 0.23)), url(imge/header-tefa-feedlot.jpg) center no-repeat;
+  padding : 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.detail {
+  background : linear-gradient(rgba(36, 6, 6, 0.83) 
+    ,rgba(146, 122, 113, 0.23)), url(imge/bgnews.PNG) center no-repeat;
+  background-size : cover;
+  height : 350px;
+  padding : 20px;
+}
+
+.detail h1 {
+  align-content: center;
+  text-align: center;
+  padding-top : 50px;
+}
+
+.praktik {
+  background : linear-gradient(rgba(36, 6, 6, 0.83) 
+    ,rgba(146, 122, 113, 0.23)), url(imge/header-tefa-feedlot.jpg) center no-repeat;
+    background-size : cover;
+    font-size : 30px;
+    align-content: center;
+  text-align: center;
+}
+
+.hero hr {
+  height : 2px;
+  background-color : white;
+}
+
+/* berita */
+.container {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+#card-container .card {
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#card-container .card:hover {
+  transform: translateY(-5px);
+}
+
+#card-container .card img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  display: block;
+}
+
+#card-container .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+#card-container .date {
+  font-size: 12px;
+  color: #333;
+  text-align: right;
+  width: 100%;
+}
+
+#card-container .title {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#card-container .arrow {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 22px;
+  color: #000;
+}
+.pagination {
+  display: flex;
+  justify-content: center; 
+  margin: 40px 0;
+}
+
+.page-btn {
+  border: none;
+  padding: 7px 12px;
+  margin: 0 3px;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.page-btn.active {
+  background: #054f4f;
+  color: white;
+}
+
+
+/* detail */
+
+@media (max-width: 992px) {
+    .detail {
+        height: 250px;
+        padding-left: 15px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .detail {
+        height: 200px;
+        padding-left: 10px;
+        margin-top : 50px
+    }
+}
+.detail-back {
+    background-color: #007A7A;
+    color: white;
+    height: 50px;
+    width: 80px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detail-back:hover {
+    background-color: #054f4f;
+}
+
+#judul {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+.detail-berita {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+#gambar {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border-radius: 14px;
+    margin: 20px 30px 0 30px;
+    object-fit: cover;
+}
+
+#tanggal {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#isi {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    white-space: pre-line; 
+    max-width: 1000px;
+    margin: auto;
+    text-indent: 40px;
+}
+
+@media (max-width: 992px) {
+    #judul {
+        font-size: 28px;
+    }
+
+    #isi {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    #gambar {
+        margin: 20px 15px 0 15px;
+    }
+
+    .detail-back {
+        width: 70px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    #judul {
+        font-size: 24px;
+    }
+
+    #isi {
+        font-size: 15px;
+    }
+
+    .detail-back {
+        width: 60px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+
+
+.box {
+  display : flex;
+  max-height : 400px;
+  margin : 20px;
+  padding : 10px;
+  border : 1px solid black;
+  gap : 60px;
+  justify-content: space-between;
+}
+
+.box img {
+  max-width : 550px;
+  max-height : 360px;
+}
+.box-p {
+  font-size : 24px;
+}
+
+/* abut sus  */
+.about-container {
+  background-color : #FFF4EE;
+  margin : 0
+}
+
+.about-section {
+  width: 100%;
+  height: 416px;
+  background : linear-gradient(to right,rgba(0, 0, 0, 0.9)
+,rgba(70, 26, 26, 0.4)), url('imge/header-tefa-feedlot.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.about-content {
+  position: relative;
+  width: 42%;
+}
+
+.about-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+.about-map {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-map iframe {
+  width: 85%;
+  height: 280px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+}
+
+.org-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}/* Container Title */
+.org-container .org-title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 28px;
+}
+
+.org-line {
+    width: 150px;
+    height: 3px;
+    background: #333;
+    margin: 10px auto 25px auto;
+}
+
+/* Card Style (tanpa gambar) */
+.org-card {
+    background: #3d0a0a;
+    color: white;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.2s ease;
+    min-height: 110px; /* biar kotak rata ukuran */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hover effect */
+.org-card:hover {
+    background: #5a0f0f;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Nama */
+.org-card h6 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+/* Posisi */
+.org-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive */
+@media(max-width: 576px) {
+    .org-card {
+        padding: 15px;
+        min-height: 100px;
+    }
+}
+
+
+
+.judul-vmk {
+  width: 100%;
+  max-width: 900px;
+  background: #FFF4EE;
+  border: 3px solid #010b15;
+  padding: 19px 0;
+  margin: 70px auto 0;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #4B1E1E;
+  box-sizing: border-box;
+}
+
+.vmk-wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 80px ;
+}
+
+.vmk-column {
+  flex: 1;
+  max-width: 380px;
+}
+
+.kontak-box {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  background: #653131;
+  border-radius: 14px;
+  padding: 22px;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.kontak-box h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.kontak-box p {
+  font-size: 13px;
+  margin: 6px 0;
+}
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .about-content, .about-map {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-map iframe {
+    width: 95%;
+    height: 250px;
+  }
+
+  .org-wrap {
+    margin: 20px 40px;
+    padding: 10px;
+  }
+
+  .org-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vmk-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .vmk-column, .kontak-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .judul-vmk {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+
+  .org-photo {
+    width: 100px;
+    height: 120px;
+  }
+
+  .org-name, .org-role {
+    font-size: 14px;
+  }
+
+  .kontak-box {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .kontak-box h2 {
+    font-size: 16px;
+  }
+
+  .kontak-box p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 14px;
+  }
+
+  .vmk-wrapper {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+}
+
+
+/* PRODUUUK */
+.info-proses {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1 1 300px;
+  min-height: 180px;
+  border: 3px solid #544444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 15px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.nutrisi-box {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.milk-text {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1;
+  color: #003F5A;
+  text-align: center;
+}
+
+.hewan-section {
+  background: #f3e4cc;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.label-vertikal {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #7baaa0;
+  font-weight: bold;
+}
+
+.title-main {
+  font-size: 36px;
+  color: #336d6b;
+  margin: 0;
+}
+
+.title-sub {
+  font-size: 30px;
+  color: rgba(116, 163, 153, 0.5);
+  margin-top: 5px;
+}
+
+/* CARD HEWAN */
+.hewan-card {
+  margin-top: 40px;
+  background: #f3e4cc;
+  border-top: 1px solid #c6b399;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.hewan-img {
+  width: 180px;
+  border-radius: 50%;
+  background: rgba(70, 26, 26, 1);
+  padding: 5px;
+}
+
+.hewan-info {
+  flex: 1;
+}
+
+.hewan-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.hewan-info p {
+  width: 100%;
+  line-height: 1.4;
+}
+
+/* =========================
+   PENITIPAN HEWAN
+   (Bootstrap Card)
+========================= */
+.penitipan-section {
+  background: linear-gradient(180deg, rgba(70,26,26,0.92) 70%, rgba(70,26,26,0.5) 100%), url('imge/berita2.jpeg') center/cover no-repeat;
+  padding: 50px 0 80px 0;
+  color: white;
+}
+
+.container-penitipan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.left-side, .right-side {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.left-side h1, .right-side h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.card-penitipan {
+  background: #610c0c;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.card-penitipan.large {
+  width: 100%;
+}
+
+.price-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.qr-box {
+  background: #af0000;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width : 100%;
+  box-sizing : border-box;
+}
+
+.qr-image {
+  max-width: 250px;
+  margin-bottom: 10px;
+  height : 100%;
+  width : 100%
+}
+
+.form-link {
+  color: #f7d9c4;
+  font-size: 13px;
+  display: block;
+  word-break: break-all;
+  text-decoration: none;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+/* fasilitazzz */
+.sect-fasilitas {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.card-fasilitas { gap : 210px;}
+
+.sect-fasilitas h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.sect-fasilitas hr {
+  margin: 0 auto 40px auto;
+  height: 3px;
+  background-color: black;
+  width: 80px;
+}
+
+.fasilitas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fas {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.fas img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.fas h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .info-proses {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hewan-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hewan-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-penitipan {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .fasilitas {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
