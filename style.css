@@ -634,8 +634,8 @@ footer a {
     .detail-back {
         width: 55px;
         height: 40px;
-        font-size: 26px;
-        margin-top : 10px
+        font-size: 22px;
+        margin-top : 60px
     }
 }
 @media (max-width: 480px) {
@@ -655,7 +655,6 @@ footer a {
     }
 
     .detail-back {
-      margin-top : 10px;
         top: 10px;
         left: 10px;
         font-size : 23px;
