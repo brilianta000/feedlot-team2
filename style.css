@@ -621,7 +621,29 @@ footer a {
         font-size: 22px;
     }
 }
+@media (max-width: 480px) {
+  .detail-berita {
+    height : 200px;
+    padding : 10px
+  }
 
+  #judul {
+        font-size: 23px;
+        margin-top: 20px;
+  }
+
+  #isi {
+      font-size: 15px;
+      padding: 0 5px;
+      text-indent: 20px;
+  }
+
+  .detail-back {
+      width: 55px;
+      height: 40px;
+      font-size: 22px;
+  }
+}
 
 .about-container {
   background-color : #FFF4EE;
