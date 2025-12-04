@@ -488,7 +488,6 @@ footer a {
 
 
 /* detail */
-
 .detail {
     background: linear-gradient(rgba(36, 6, 6, 0.83),
     rgba(146, 122, 113, 0.23)), 
@@ -538,6 +537,7 @@ footer a {
     text-align: center;
     padding: 0 20px;
 }
+
 /* isi */
 .detail-berita {
     padding: 25px;
@@ -633,30 +633,23 @@ footer a {
         width: 55px;
         height: 40px;
         font-size: 22px;
+        margin-top : 20px
     }
 }
 @media (max-width: 480px) {
-  .detail-berita {
-    height : 200px;
-    padding : 10px
-  }
+    .detail {
+        padding-top: 60px;
+        min-height: 200px;
+    }
 
-  #judul {
-        font-size: 23px;
-        margin-top: 20px;
-  }
+    #judul {
+        font-size: 20px;
+    }
 
-  #isi {
-      font-size: 15px;
-      padding: 0 5px;
-      text-indent: 20px;
-  }
-
-  .detail-back {
-      width: 55px;
-      height: 40px;
-      font-size: 22px;
-  }
+    .detail-back {
+        top: 10px;
+        left: 10px;
+    }
 }
 
 
@@ -923,6 +916,10 @@ footer a {
     gap: 15px;
   }
 }
+
+
+
+
 
 
 /* PRODUUUK */
