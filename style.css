@@ -497,9 +497,8 @@ footer a {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
-    padding-top: 80px;
 }
 
 /* Button Back */
@@ -935,6 +934,7 @@ footer a {
 /* PRODUUUK */
 .info-proses {
   display: flex;
+  max-width : 1300px;
   justify-content: space-between;
   padding: 40px;
   gap: 20px;
@@ -943,8 +943,9 @@ footer a {
 }
 
 .info-box {
-  flex: 1 1 300px;
+  /* flex: 1 1 300px; */
   min-height: 180px;
+  max-width: 600px;
   border: 3px solid #544444;
   display: flex;
   justify-content: center;
@@ -956,7 +957,7 @@ footer a {
 }
 
 .nutrisi-box {
-  flex: 1 1 300px;
+  /* flex: 1 1 300px; */
   display: flex;
   align-items: center;
   justify-content: center;
