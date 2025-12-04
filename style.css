@@ -622,6 +622,7 @@ footer a {
         font-size: 23px;
         margin-left: 20px;
         text-align : center;
+        padding-top : 20px;
     }
 
     #isi {
@@ -647,7 +648,10 @@ footer a {
     }
 
     #judul {
-        font-size: 20px;
+        font-size: 23px;
+        margin-left: 20px;
+        text-align : center;
+        padding-top : 20px;
     }
 
     .detail-back {
