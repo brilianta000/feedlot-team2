@@ -606,7 +606,7 @@ footer a {
 
 @media (max-width: 576px) {
     .detail {
-        height: 240px;
+        max-height: 440px;
         padding: 10px;
         text-align : center;
         justify-content : center;
