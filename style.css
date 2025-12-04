@@ -597,16 +597,21 @@ footer a {
 
 @media (max-width: 576px) {
     .detail {
-        height: 200px;
+        height: 240px;
         padding: 10px;
+        text-align : center;
+        justify-content : center;
+        flex-direction : column;
     }
     #gambar {
-      width : 440px;
+      border-radius : 12px;
+      margin : 15px 0;
     }
 
     #judul {
         font-size: 23px;
-        margin-top: 20px;
+        margin-left: 20px;
+        text-align : center;
     }
 
     #isi {
