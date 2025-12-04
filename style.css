@@ -600,6 +600,9 @@ footer a {
         height: 200px;
         padding: 10px;
     }
+    #gambar {
+      width : 440px;
+    }
 
     #judul {
         font-size: 23px;
