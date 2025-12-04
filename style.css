@@ -610,8 +610,8 @@ footer a {
         padding: 10px;
         text-align : center;
         justify-content : center;
-        margin-top : 30px
-        /* flex-direction : column; */
+        margin-top : 30px;
+        flex-direction : column;
     }
     #gambar {
       border-radius : 12px;
