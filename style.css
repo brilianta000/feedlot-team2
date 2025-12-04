@@ -611,7 +611,7 @@ footer a {
         text-align : center;
         justify-content : center;
         margin-top : 90px;
-        /* flex-direction : column; */
+        flex-direction : column;
     }
     #gambar {
       border-radius : 12px;
@@ -641,7 +641,9 @@ footer a {
     .detail {
         padding-top: 60px;
         min-height: 200px;
-        margin-top : 30px
+        max-height : 440px;
+        margin-top : 30px;
+        flex-direction : column
     }
 
     #judul {
