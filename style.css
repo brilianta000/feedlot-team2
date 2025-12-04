@@ -610,7 +610,7 @@ footer a {
         padding: 10px;
         text-align : center;
         justify-content : center;
-        flex-direction : column;
+        /* flex-direction : column; */
     }
     #gambar {
       border-radius : 12px;
@@ -633,7 +633,7 @@ footer a {
         width: 55px;
         height: 40px;
         font-size: 22px;
-        margin-top : 20px
+        margin-top : 60px
     }
 }
 @media (max-width: 480px) {
@@ -651,6 +651,7 @@ footer a {
         left: 10px;
     }
 }
+
 
 
 
@@ -1170,47 +1171,11 @@ footer a {
   }
   .nutrisi-box img {
     max-width: 250px;
+    height : 210px;
   }
 }
 
 @media (max-width: 992px) {
-  .info-proses {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .hewan-card {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hewan-info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .container-penitipan {
-    flex-direction: column;
-  }
-
-  .left-side, .right-side {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .fasilitas {
-    flex-direction: column;
-    gap: 25px;
-  }
-}
-@media (max-width: 768px) {
-  .right-side {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
   .info-proses {
     flex-direction: column;
     height: auto;
